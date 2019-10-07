@@ -15,7 +15,7 @@ def count_words(path):
 
     for line in file:
         word_list = line.split()
-        for word in word_list:
+        for word in word_list: #[word.lower for word in word_list]
             word = word.lower()
             word_count[word] = word_count.get(word, 0) + 1
 
